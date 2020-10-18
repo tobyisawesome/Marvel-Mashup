@@ -432,6 +432,57 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "wip"
+    },
+    {
+      "name": "HulkSmash",
+      "type": "enchantment",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hulk_smash"
+    },
+    {
+      "name": "Worthy",
+      "type": "enchantment",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "worthy"
+    },
+    {
+      "name": "Smash",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smash",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -451,8 +502,8 @@
   ],
   "language_map": {
     "en_us": {
-      "item.marvel_mashup.wip": "Enderwolf Spawn Egg",
       "block.marvel_mashup.adamantite_ore_block": "Block of Adamantium",
+      "item.marvel_mashup.wip": "Enderwolf Spawn Egg",
       "entity.marvel_mashup.wip": "Enderwolf",
       "item.marvel_mashup.iron_man": "Iron Man Spawn Egg",
       "block.marvel_mashup.adamantite_ore": "Adamantium Ore",
@@ -462,10 +513,12 @@
       "entity.marvel_mashup.thor": "Thor",
       "item.marvel_mashup.gravitron": "Music Disc",
       "item.marvel_mashup.blaster": "Blaster",
+      "enchantment.marvel_mashup.worthy": "Worthy",
       "item.marvel_mashup.adamantite_gem": "Adamantium",
       "item.marvel_mashup.mjolnir": "Mjolnir",
       "entity.marvel_mashup.iron_man": "Iron Man",
       "block.marvel_mashup.legendary_mjolnir_block": "Legendary Mjolnir",
+      "enchantment.marvel_mashup.hulk_smash": "Hulk Smash",
       "block.marvel_mashup.discarded_shield": "Discarded Shield"
     }
   },

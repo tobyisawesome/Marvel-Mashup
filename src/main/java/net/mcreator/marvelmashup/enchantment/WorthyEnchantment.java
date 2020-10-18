@@ -1,0 +1,54 @@
+
+package net.mcreator.marvelmashup.enchantment;
+
+import net.minecraftforge.registries.ObjectHolder;
+
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.enchantment.EnchantmentType;
+import net.minecraft.enchantment.Enchantment;
+
+import net.mcreator.marvelmashup.MarvelMashupModElements;
+
+@MarvelMashupModElements.ModElement.Tag
+public class WorthyEnchantment extends MarvelMashupModElements.ModElement {
+	@ObjectHolder("marvel_mashup:worthy")
+	public static final Enchantment enchantment = null;
+	public WorthyEnchantment(MarvelMashupModElements instance) {
+		super(instance, 29);
+	}
+
+	@Override
+	public void initElements() {
+		elements.enchantments.add(() -> new CustomEnchantment(EquipmentSlotType.MAINHAND).setRegistryName("worthy"));
+	}
+	public static class CustomEnchantment extends Enchantment {
+		public CustomEnchantment(EquipmentSlotType... slots) {
+			super(Enchantment.Rarity.VERY_RARE, EnchantmentType.ALL, slots);
+		}
+
+		@Override
+		public int getMinLevel() {
+			return 1;
+		}
+
+		@Override
+		public int getMaxLevel() {
+			return 1;
+		}
+
+		@Override
+		public boolean isTreasureEnchantment() {
+			return false;
+		}
+
+		@Override
+		public boolean isCurse() {
+			return false;
+		}
+
+		@Override
+		public boolean isAllowedOnBooks() {
+			return true;
+		}
+	}
+}
