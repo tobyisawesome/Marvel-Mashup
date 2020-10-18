@@ -432,6 +432,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "wip"
+    },
+    {
+      "name": "StarkTower",
+      "type": "structure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stark_tower"
     }
   ],
   "variable_elements": [
