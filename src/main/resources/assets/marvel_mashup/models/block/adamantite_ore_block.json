@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "marvel_mashup:blocks/adamantite_ore_block",
+    "particle": "marvel_mashup:blocks/adamantite_ore_block"
+  }
+}

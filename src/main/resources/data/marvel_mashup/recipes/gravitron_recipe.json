@@ -1,0 +1,27 @@
+{
+  "group": "marvel_mashup",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "3 5",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "marvel_mashup:adamantite_gem"
+    },
+    "3": {
+      "item": "marvel_mashup:adamantite_gem"
+    },
+    "5": {
+      "item": "marvel_mashup:adamantite_gem"
+    },
+    "7": {
+      "item": "marvel_mashup:adamantite_gem"
+    }
+  },
+  "result": {
+    "item": "marvel_mashup:gravitron",
+    "count": 1
+  }
+}

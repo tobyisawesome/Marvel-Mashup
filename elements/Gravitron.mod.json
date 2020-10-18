@@ -1,0 +1,17 @@
+{
+  "_fv": 10,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "marveldisc",
+    "name": "Music Disc",
+    "description": "Neil Cicierega - Gravitron",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:gravitron"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

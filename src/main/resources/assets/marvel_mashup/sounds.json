@@ -1,0 +1,11 @@
+{
+  "gravitron": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "marvel_mashup:neil_cicierega_-_gravitron",
+        "stream": true
+      }
+    ]
+  }
+}

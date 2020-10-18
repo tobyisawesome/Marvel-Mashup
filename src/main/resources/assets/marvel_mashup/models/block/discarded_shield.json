@@ -1,0 +1,8 @@
+{
+  "parent": "marvel_mashup:custom/unitedshield",
+  "textures": {
+    "all": "marvel_mashup:blocks/sergeant_united_shield",
+    "particle": "marvel_mashup:blocks/sergeant_united_shield",
+    "0": "marvel_mashup:blocks/sergeant_united_shield"
+  }
+}

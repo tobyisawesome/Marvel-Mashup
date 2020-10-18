@@ -1,0 +1,478 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "LegendaryMjolnirBlock",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "legendary_mjolnir_block"
+    },
+    {
+      "name": "Mjolnir",
+      "type": "tool",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mjolnir"
+    },
+    {
+      "name": "UnitedShield",
+      "type": "gun",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "united_shield"
+    },
+    {
+      "name": "DiscardedShield",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "discarded_shield"
+    },
+    {
+      "name": "LegendaryMjolnirBlockBlockAdded",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "legendary_mjolnir_block_block_added",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MjolnirRightClickedInAir",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mjolnir_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AdamantiteGem",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "adamantite_gem"
+    },
+    {
+      "name": "AdamantiteOre",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "adamantite_ore"
+    },
+    {
+      "name": "AdamantiteOreBlock",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "adamantite_ore_block"
+    },
+    {
+      "name": "AdamantiteOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "adamantite_ore_block_recipe"
+    },
+    {
+      "name": "AdamantiteBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "adamantite_block_ore_recipe"
+    },
+    {
+      "name": "AdamantiteOreSmelting",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "adamantite_ore_smelting"
+    },
+    {
+      "name": "UnitedShieldRecipe",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "united_shield_recipe"
+    },
+    {
+      "name": "DiscardedShieldOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "discarded_shield_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MlojnirSpawn",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mlojnir_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ManualMlojnirSpawn",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manual_mlojnir_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Spawnmjolnir",
+      "type": "command",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawnmjolnir"
+    },
+    {
+      "name": "UnitedShieldBulletHitsBlock",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "united_shield_bullet_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LegendaryMjolnirBlockOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "legendary_mjolnir_block_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MjolnirToolInHandTick",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mjolnir_tool_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ThorItIsStruckByLightning",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thor_it_is_struck_by_lightning",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Thor",
+      "type": "mob",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "thor"
+    },
+    {
+      "name": "Gravitron",
+      "type": "musicdisc",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gravitron"
+    },
+    {
+      "name": "GravitronRecipe",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gravitron_recipe"
+    },
+    {
+      "name": "BlasterBulletHitsBlock",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blaster_bullet_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Blaster",
+      "type": "gun",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blaster"
+    },
+    {
+      "name": "IronMan",
+      "type": "mob",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iron_man"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "MjolnirLanded",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "gravitron",
+      "file": "neil_cicierega_-_gravitron",
+      "category": "record"
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "block.marvel_mashup.adamantite_ore_block": "Block of Adamantium",
+      "item.marvel_mashup.iron_man": "Iron Man Spawn Egg",
+      "block.marvel_mashup.adamantite_ore": "Adamantium Ore",
+      "item.marvel_mashup.gravitron.desc": "Neil Cicierega - Gravitron",
+      "item.marvel_mashup.thor": "Thor Spawn Egg",
+      "item.marvel_mashup.united_shield": "Adamantium Shield",
+      "entity.marvel_mashup.thor": "Thor",
+      "item.marvel_mashup.gravitron": "Music Disc",
+      "item.marvel_mashup.blaster": "Blaster",
+      "item.marvel_mashup.adamantite_gem": "Adamantium",
+      "item.marvel_mashup.mjolnir": "Mjolnir",
+      "entity.marvel_mashup.iron_man": "Iron Man",
+      "block.marvel_mashup.legendary_mjolnir_block": "Legendary Mjolnir",
+      "block.marvel_mashup.discarded_shield": "Discarded Shield"
+    }
+  },
+  "workspaceSettings": {
+    "modid": "marvel_mashup",
+    "modName": "Marvel Mashup",
+    "version": "1.0.0",
+    "author": "tobyd, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.15.2",
+    "modElementsPackage": "net.mcreator.marvelmashup",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202000432115
+}

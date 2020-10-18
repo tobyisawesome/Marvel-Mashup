@@ -1,0 +1,42 @@
+{
+  "_fv": 10,
+  "_type": "gun",
+  "definition": {
+    "renderType": 1,
+    "texture": "sergeant_united_shield",
+    "customModelName": "unitedshieldtest2:default",
+    "name": "Adamantium Shield",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": "CUSTOM:UnitedShield"
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "enableMeleeDamage": true,
+    "damageVsEntity": 6.0,
+    "bulletPower": 1.0,
+    "bulletDamage": 7.0,
+    "bulletKnockback": 3,
+    "bulletParticles": true,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:UnitedShield"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "UnitedShieldBulletHitsBlock"
+    },
+    "onBulletHitsEntity": {
+      "name": "UnitedShieldBulletHitsBlock"
+    }
+  }
+}

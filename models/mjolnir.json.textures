@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "mjol1",
+        "1": "mjol2",
+        "2": "mjol3",
+        "3": "mjol4",
+        "4": "mjol5"
+      },
+      "name": "default"
+    }
+  }
+}

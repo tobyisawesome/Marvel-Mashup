@@ -1,0 +1,133 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "Downloads/Sergeant_United_Shield",
+		"particle": "Downloads/Sergeant_United_Shield"
+	},
+	"elements": [
+		{
+			"name": "Sergeant_United_Shield_0",
+			"from": [5, 0, 0],
+			"to": [11, 0.5, 16],
+			"faces": {
+				"north": {"uv": [11, 0, 5, 0.5], "texture": "#0"},
+				"east": {"uv": [10.5, 0, 11, 16], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [5, 15.5, 11, 16], "texture": "#0"},
+				"west": {"uv": [5, 0, 5.5, 16], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [5, 0, 11, 16], "texture": "#0"},
+				"down": {"uv": [5, 16, 11, 0], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Sergeant_United_Shield_1",
+			"from": [3, 0, 1],
+			"to": [5, 0.5, 15],
+			"faces": {
+				"north": {"uv": [5, 1, 3, 1.5], "texture": "#0"},
+				"east": {"uv": [4.5, 1, 5, 15], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [3, 14.5, 5, 15], "texture": "#0"},
+				"west": {"uv": [3, 1, 3.5, 15], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [3, 1, 5, 15], "texture": "#0"},
+				"down": {"uv": [3, 15, 5, 1], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Sergeant_United_Shield_2",
+			"from": [11, 0, 1],
+			"to": [13, 0.5, 15],
+			"faces": {
+				"north": {"uv": [13, 1, 11, 1.5], "texture": "#0"},
+				"east": {"uv": [12.5, 1, 13, 15], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [11, 14.5, 13, 15], "texture": "#0"},
+				"west": {"uv": [11, 1, 11.5, 15], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [11, 1, 13, 15], "texture": "#0"},
+				"down": {"uv": [11, 15, 13, 1], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Sergeant_United_Shield_3",
+			"from": [2, 0, 2],
+			"to": [3, 0.5, 14],
+			"faces": {
+				"north": {"uv": [3, 2, 2, 2.5], "texture": "#0"},
+				"east": {"uv": [2.5, 2, 3, 14], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [2, 13.5, 3, 14], "texture": "#0"},
+				"west": {"uv": [2, 2, 2.5, 14], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [2, 2, 3, 14], "texture": "#0"},
+				"down": {"uv": [2, 14, 3, 2], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Sergeant_United_Shield_4",
+			"from": [13, 0, 2],
+			"to": [14, 0.5, 14],
+			"faces": {
+				"north": {"uv": [14, 2, 13, 2.5], "texture": "#0"},
+				"east": {"uv": [13.5, 2, 14, 14], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [13, 13.5, 14, 14], "texture": "#0"},
+				"west": {"uv": [13, 2, 13.5, 14], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [13, 2, 14, 14], "texture": "#0"},
+				"down": {"uv": [13, 14, 14, 2], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Sergeant_United_Shield_5",
+			"from": [1, 0, 3],
+			"to": [2, 0.5, 13],
+			"faces": {
+				"north": {"uv": [2, 3, 1, 3.5], "texture": "#0"},
+				"east": {"uv": [1.5, 3, 2, 13], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [1, 12.5, 2, 13], "texture": "#0"},
+				"west": {"uv": [1, 3, 1.5, 13], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [1, 3, 2, 13], "texture": "#0"},
+				"down": {"uv": [1, 13, 2, 3], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Sergeant_United_Shield_6",
+			"from": [14, 0, 3],
+			"to": [15, 0.5, 13],
+			"faces": {
+				"north": {"uv": [15, 3, 14, 3.5], "texture": "#0"},
+				"east": {"uv": [14.5, 3, 15, 13], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [14, 12.5, 15, 13], "texture": "#0"},
+				"west": {"uv": [14, 3, 14.5, 13], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [14, 3, 15, 13], "texture": "#0"},
+				"down": {"uv": [14, 13, 15, 3], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Sergeant_United_Shield_7",
+			"from": [0, 0, 5],
+			"to": [1, 0.5, 11],
+			"faces": {
+				"north": {"uv": [1, 5, 0, 5.5], "texture": "#0"},
+				"east": {"uv": [0.5, 5, 1, 11], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [0, 10.5, 1, 11], "texture": "#0"},
+				"west": {"uv": [0, 5, 0.5, 11], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [0, 5, 1, 11], "texture": "#0"},
+				"down": {"uv": [0, 11, 1, 5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Sergeant_United_Shield_8",
+			"from": [15, 0, 5],
+			"to": [16, 0.5, 11],
+			"faces": {
+				"north": {"uv": [16, 5, 15, 5.5], "texture": "#0"},
+				"east": {"uv": [15.5, 5, 16, 11], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [15, 10.5, 16, 11], "texture": "#0"},
+				"west": {"uv": [15, 5, 15.5, 11], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [15, 5, 16, 11], "texture": "#0"},
+				"down": {"uv": [15, 11, 16, 5], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "Sergeant_United_Shield",
+			"origin": [8, 8, 8],
+			"children": [0, 1, 2, 3, 4, 5, 6, 7, 8]
+		}
+	]
+}

@@ -1,0 +1,11 @@
+{
+  "parent": "marvel_mashup:custom/mjolnirtacticalnew",
+  "textures": {
+    "0": "marvel_mashup:blocks/mjol1",
+    "1": "marvel_mashup:blocks/mjol2",
+    "2": "marvel_mashup:blocks/mjol3",
+    "3": "marvel_mashup:blocks/mjol4new",
+    "4": "marvel_mashup:blocks/mjol5new",
+    "particle": "marvel_mashup:items/mjol"
+  }
+}

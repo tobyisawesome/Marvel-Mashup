@@ -1,0 +1,42 @@
+{
+  "group": "marvel_mashup",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "marvel_mashup:adamantite_gem"
+    },
+    "1": {
+      "item": "marvel_mashup:adamantite_gem"
+    },
+    "2": {
+      "item": "marvel_mashup:adamantite_gem"
+    },
+    "3": {
+      "item": "marvel_mashup:adamantite_gem"
+    },
+    "4": {
+      "item": "marvel_mashup:adamantite_gem"
+    },
+    "5": {
+      "item": "marvel_mashup:adamantite_gem"
+    },
+    "6": {
+      "item": "marvel_mashup:adamantite_gem"
+    },
+    "7": {
+      "item": "marvel_mashup:adamantite_gem"
+    },
+    "8": {
+      "item": "marvel_mashup:adamantite_gem"
+    }
+  },
+  "result": {
+    "item": "marvel_mashup:adamantite_ore_block",
+    "count": 1
+  }
+}

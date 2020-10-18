@@ -1,0 +1,7 @@
+{
+  "parent": "marvel_mashup:custom/unitedshieldtest2",
+  "textures": {
+    "0": "marvel_mashup:blocks/sergeant_united_shield",
+    "particle": "marvel_mashup:items/sergeant_united_shield"
+  }
+}

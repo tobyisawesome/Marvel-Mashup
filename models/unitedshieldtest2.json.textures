@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "sergeant_united_shield"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "parent": "marvel_mashup:custom/blaster12534final",
+  "textures": {
+    "0": "marvel_mashup:blocks/1",
+    "1": "marvel_mashup:blocks/2",
+    "2": "marvel_mashup:blocks/5",
+    "3": "marvel_mashup:blocks/3",
+    "4": "marvel_mashup:blocks/4",
+    "particle": "marvel_mashup:items/marveldisc"
+  }
+}

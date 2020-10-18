@@ -1,0 +1,39 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "Downloads/mjol1",
+		"1": "Downloads/mjol2",
+		"2": "Downloads/mjol3",
+		"3": "Downloads/mjol4new",
+		"4": "Downloads/mjol5new",
+		"particle": "Downloads/mjol1"
+	},
+	"elements": [
+		{
+			"from": [3, 0, 5],
+			"to": [13, 4, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [27, 8, 15]},
+			"faces": {
+				"north": {"uv": [0, 0, 5, 2], "texture": "#0"},
+				"east": {"uv": [0, 0, 3, 2], "texture": "#1"},
+				"south": {"uv": [0, 0, 5, 2], "texture": "#0"},
+				"west": {"uv": [0, 0, 3, 2], "texture": "#1"},
+				"up": {"uv": [0, 0, 5, 3], "texture": "#2"},
+				"down": {"uv": [0, 0, 5, 3], "texture": "#2"}
+			}
+		},
+		{
+			"from": [7, 4, 7],
+			"to": [9, 11, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 12, 15]},
+			"faces": {
+				"north": {"uv": [0, 0, 2, 7], "texture": "#3"},
+				"east": {"uv": [0, 0, 2, 7], "texture": "#3"},
+				"south": {"uv": [0, 0, 2, 7], "texture": "#3"},
+				"west": {"uv": [0, 0, 2, 7], "texture": "#3"},
+				"up": {"uv": [0, 0, 2, 2], "texture": "#4"},
+				"down": {"uv": [0, 0, 2, 2], "texture": "#4"}
+			}
+		}
+	]
+}

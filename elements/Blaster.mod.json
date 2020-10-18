@@ -1,0 +1,42 @@
+{
+  "_fv": 10,
+  "_type": "gun",
+  "definition": {
+    "renderType": 1,
+    "texture": "marveldisc",
+    "customModelName": "blaster12534final:default",
+    "name": "Blaster",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 100,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 1.0,
+    "bulletDamage": 7.0,
+    "bulletKnockback": 10,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "Items.SNOWBALL"
+    },
+    "bulletModel": "Modelcustom_model",
+    "customBulletModelTexture": "texture.png",
+    "onBulletHitsBlock": {
+      "name": "BlasterBulletHitsBlock"
+    },
+    "onBulletHitsEntity": {
+      "name": "BlasterBulletHitsBlock"
+    }
+  }
+}
