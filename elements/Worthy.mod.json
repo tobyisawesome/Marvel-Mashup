@@ -2,8 +2,8 @@
   "_fv": 10,
   "_type": "enchantment",
   "definition": {
-    "name": "Worthy",
-    "type": "ALL",
+    "name": "Time Shift",
+    "type": "ARMOR_FEET",
     "rarity": "VERY_RARE",
     "minLevel": 1,
     "maxLevel": 1,

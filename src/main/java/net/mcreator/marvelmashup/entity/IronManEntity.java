@@ -76,7 +76,7 @@ public class IronManEntity extends MarvelMashupModElements.ModElement {
 			BipedRenderer customRender = new BipedRenderer(renderManager, new BipedModel(0), 0.5f) {
 				@Override
 				public ResourceLocation getEntityTexture(Entity entity) {
-					return new ResourceLocation("marvel_mashup:textures/ironmanminecraftskin_9952_skin.png");
+					return new ResourceLocation("marvel_mashup:textures/ironman_2134190.png");
 				}
 			};
 			customRender.addLayer(new BipedArmorLayer(customRender, new BipedModel(0.5f), new BipedModel(1)));

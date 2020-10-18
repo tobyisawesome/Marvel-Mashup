@@ -18,50 +18,48 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
-import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
-import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.entity.projectile.PotionEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.monster.MonsterEntity;
-import net.minecraft.entity.effect.LightningBoltEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
-import net.minecraft.entity.ai.goal.MeleeAttackGoal;
+import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.client.renderer.entity.layers.BipedArmorLayer;
 import net.minecraft.client.renderer.entity.BipedRenderer;
 
-import net.mcreator.marvelmashup.procedures.ThorItIsStruckByLightningProcedure;
-import net.mcreator.marvelmashup.item.MjolnirItem;
+import net.mcreator.marvelmashup.procedures.HulkEntityFallsProcedure;
 import net.mcreator.marvelmashup.MarvelMashupModElements;
 
 import java.util.Map;
 import java.util.HashMap;
 
 @MarvelMashupModElements.ModElement.Tag
-public class ThorEntity extends MarvelMashupModElements.ModElement {
+public class HulkEntity extends MarvelMashupModElements.ModElement {
 	public static EntityType entity = null;
-	public ThorEntity(MarvelMashupModElements instance) {
-		super(instance, 20);
+	public HulkEntity(MarvelMashupModElements instance) {
+		super(instance, 31);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
 	@Override
 	public void initElements() {
-		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER).setShouldReceiveVelocityUpdates(true)
-				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire().size(0.6f, 1.8f)).build("thor")
-						.setRegistryName("thor");
+		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.WATER_CREATURE)
+				.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
+				.size(0.6f, 1.8f)).build("hulk").setRegistryName("hulk");
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -16764109, -10027009, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("thor"));
+		elements.items.add(() -> new SpawnEggItem(entity, -16738048, -13434829, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("hulk"));
 	}
 
 	@SubscribeEvent
@@ -71,7 +69,7 @@ public class ThorEntity extends MarvelMashupModElements.ModElement {
 			BipedRenderer customRender = new BipedRenderer(renderManager, new BipedModel(0), 0.5f) {
 				@Override
 				public ResourceLocation getEntityTexture(Entity entity) {
-					return new ResourceLocation("marvel_mashup:textures/thor_42172.png");
+					return new ResourceLocation("marvel_mashup:textures/hulk_2142456.png");
 				}
 			};
 			customRender.addLayer(new BipedArmorLayer(customRender, new BipedModel(0.5f), new BipedModel(1)));
@@ -88,7 +86,6 @@ public class ThorEntity extends MarvelMashupModElements.ModElement {
 			experienceValue = 0;
 			setNoAI(false);
 			enablePersistence();
-			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(MjolnirItem.block, (int) (1)));
 		}
 
 		@Override
@@ -99,11 +96,13 @@ public class ThorEntity extends MarvelMashupModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false));
-			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 1));
-			this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
-			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
-			this.goalSelector.addGoal(5, new SwimGoal(this));
+			this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, AnimalEntity.class, false, false));
+			this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, CreatureEntity.class, false, false));
+			this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, MobEntity.class, false, false));
+			this.goalSelector.addGoal(4, new RandomWalkingGoal(this, 1));
+			this.targetSelector.addGoal(5, new HurtByTargetGoal(this));
+			this.goalSelector.addGoal(6, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(7, new SwimGoal(this));
 		}
 
 		@Override
@@ -118,7 +117,6 @@ public class ThorEntity extends MarvelMashupModElements.ModElement {
 
 		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
 			super.dropSpecialItems(source, looting, recentlyHitIn);
-			this.entityDropItem(new ItemStack(MjolnirItem.block, (int) (1)));
 		}
 
 		@Override
@@ -132,30 +130,25 @@ public class ThorEntity extends MarvelMashupModElements.ModElement {
 		}
 
 		@Override
-		public void onStruckByLightning(LightningBoltEntity entityLightningBolt) {
-			super.onStruckByLightning(entityLightningBolt);
+		public boolean onLivingFall(float l, float d) {
 			double x = this.getPosX();
 			double y = this.getPosY();
 			double z = this.getPosZ();
 			Entity entity = this;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				ThorItIsStruckByLightningProcedure.executeProcedure($_dependencies);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				HulkEntityFallsProcedure.executeProcedure($_dependencies);
 			}
+			return super.onLivingFall(l, d);
 		}
 
 		@Override
 		public boolean attackEntityFrom(DamageSource source, float amount) {
-			if (source.getImmediateSource() instanceof PotionEntity)
-				return false;
 			if (source == DamageSource.FALL)
-				return false;
-			if (source == DamageSource.CACTUS)
-				return false;
-			if (source == DamageSource.DROWN)
-				return false;
-			if (source == DamageSource.LIGHTNING_BOLT)
 				return false;
 			return super.attackEntityFrom(source, amount);
 		}
@@ -166,9 +159,9 @@ public class ThorEntity extends MarvelMashupModElements.ModElement {
 			if (this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED) != null)
 				this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).setBaseValue(0.3);
 			if (this.getAttribute(SharedMonsterAttributes.MAX_HEALTH) != null)
-				this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(100);
+				this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(500);
 			if (this.getAttribute(SharedMonsterAttributes.ARMOR) != null)
-				this.getAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(0);
+				this.getAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(10);
 			if (this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) == null)
 				this.getAttributes().registerAttribute(SharedMonsterAttributes.ATTACK_DAMAGE);
 			this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(3);
@@ -178,7 +171,7 @@ public class ThorEntity extends MarvelMashupModElements.ModElement {
 		public boolean isNonBoss() {
 			return false;
 		}
-		private final ServerBossInfo bossInfo = new ServerBossInfo(this.getDisplayName(), BossInfo.Color.BLUE, BossInfo.Overlay.PROGRESS);
+		private final ServerBossInfo bossInfo = new ServerBossInfo(this.getDisplayName(), BossInfo.Color.GREEN, BossInfo.Overlay.PROGRESS);
 		@Override
 		public void addTrackingPlayer(ServerPlayerEntity player) {
 			super.addTrackingPlayer(player);

@@ -11,7 +11,7 @@ import net.mcreator.marvelmashup.MarvelMashupModElements;
 
 @MarvelMashupModElements.ModElement.Tag
 public class WorthyEnchantment extends MarvelMashupModElements.ModElement {
-	@ObjectHolder("marvel_mashup:worthy")
+	@ObjectHolder("marvel_mashup:time_shift")
 	public static final Enchantment enchantment = null;
 	public WorthyEnchantment(MarvelMashupModElements instance) {
 		super(instance, 29);
@@ -19,11 +19,11 @@ public class WorthyEnchantment extends MarvelMashupModElements.ModElement {
 
 	@Override
 	public void initElements() {
-		elements.enchantments.add(() -> new CustomEnchantment(EquipmentSlotType.MAINHAND).setRegistryName("worthy"));
+		elements.enchantments.add(() -> new CustomEnchantment(EquipmentSlotType.MAINHAND).setRegistryName("time_shift"));
 	}
 	public static class CustomEnchantment extends Enchantment {
 		public CustomEnchantment(EquipmentSlotType... slots) {
-			super(Enchantment.Rarity.VERY_RARE, EnchantmentType.ALL, slots);
+			super(Enchantment.Rarity.VERY_RARE, EnchantmentType.ARMOR_FEET, slots);
 		}
 
 		@Override

@@ -449,7 +449,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "worthy"
+      "registry_name": "time_shift"
     },
     {
       "name": "Smash",
@@ -459,6 +459,77 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "smash",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hulk",
+      "type": "mob",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hulk"
+    },
+    {
+      "name": "HulkEntityFalls",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hulk_entity_falls",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WorthyEnchantment",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "worthy_enchantment",
       "metadata": {
         "dependencies": [
           {
@@ -502,10 +573,11 @@
   ],
   "language_map": {
     "en_us": {
-      "block.marvel_mashup.adamantite_ore_block": "Block of Adamantium",
       "item.marvel_mashup.wip": "Enderwolf Spawn Egg",
+      "block.marvel_mashup.adamantite_ore_block": "Block of Adamantium",
       "entity.marvel_mashup.wip": "Enderwolf",
       "item.marvel_mashup.iron_man": "Iron Man Spawn Egg",
+      "item.marvel_mashup.hulk": "Hulk Spawn Egg",
       "block.marvel_mashup.adamantite_ore": "Adamantium Ore",
       "item.marvel_mashup.gravitron.desc": "Neil Cicierega - Gravitron",
       "item.marvel_mashup.thor": "Thor Spawn Egg",
@@ -513,12 +585,13 @@
       "entity.marvel_mashup.thor": "Thor",
       "item.marvel_mashup.gravitron": "Music Disc",
       "item.marvel_mashup.blaster": "Blaster",
-      "enchantment.marvel_mashup.worthy": "Worthy",
       "item.marvel_mashup.adamantite_gem": "Adamantium",
       "item.marvel_mashup.mjolnir": "Mjolnir",
       "entity.marvel_mashup.iron_man": "Iron Man",
       "block.marvel_mashup.legendary_mjolnir_block": "Legendary Mjolnir",
+      "entity.marvel_mashup.hulk": "Hulk",
       "enchantment.marvel_mashup.hulk_smash": "Hulk Smash",
+      "enchantment.marvel_mashup.time_shift": "Time Shift",
       "block.marvel_mashup.discarded_shield": "Discarded Shield"
     }
   },
