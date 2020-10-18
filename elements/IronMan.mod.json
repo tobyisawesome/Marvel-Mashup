@@ -76,13 +76,13 @@
       "value": ""
     },
     "hurtSound": {
-      "value": "entity.generic.hurt"
+      "value": "block.metal.hit"
     },
     "deathSound": {
-      "value": "entity.generic.death"
+      "value": "block.anvil.place"
     },
     "stepSound": {
-      "value": ""
+      "value": "block.metal.place"
     },
     "spawnParticles": false,
     "particleToSpawn": {
