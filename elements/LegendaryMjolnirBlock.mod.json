@@ -64,7 +64,7 @@
     "luminance": 1.0,
     "unbreakable": true,
     "breakHarvestLevel": 1,
-    "spawnParticles": false,
+    "spawnParticles": true,
     "particleToSpawn": {
       "value": "END_ROD"
     },
