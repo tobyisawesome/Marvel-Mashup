@@ -5,7 +5,7 @@
     "mobName": "Iron Man",
     "mobLabel": "",
     "mobModelName": "Biped",
-    "mobModelTexture": "ironman_2134190.png",
+    "mobModelTexture": "ironmanminecraftskin_9952_skin.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
     "modelHeight": 1.8,
@@ -76,13 +76,13 @@
       "value": ""
     },
     "hurtSound": {
-      "value": "block.metal.hit"
+      "value": "entity.generic.hurt"
     },
     "deathSound": {
-      "value": "block.anvil.place"
+      "value": "entity.generic.death"
     },
     "stepSound": {
-      "value": "block.metal.place"
+      "value": ""
     },
     "spawnParticles": false,
     "particleToSpawn": {

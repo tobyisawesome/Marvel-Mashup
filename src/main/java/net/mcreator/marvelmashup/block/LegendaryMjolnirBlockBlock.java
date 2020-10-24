@@ -17,14 +17,12 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Hand;
 import net.minecraft.util.Direction;
 import net.minecraft.util.ActionResultType;
-import net.minecraft.particles.ParticleTypes;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.Minecraft;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.FallingBlock;
@@ -35,7 +33,6 @@ import net.mcreator.marvelmashup.procedures.LegendaryMjolnirBlockOnBlockRightCli
 import net.mcreator.marvelmashup.procedures.LegendaryMjolnirBlockBlockAddedProcedure;
 import net.mcreator.marvelmashup.MarvelMashupModElements;
 
-import java.util.Random;
 import java.util.Map;
 import java.util.List;
 import java.util.HashMap;
@@ -109,23 +106,6 @@ public class LegendaryMjolnirBlockBlock extends MarvelMashupModElements.ModEleme
 				$_dependencies.put("world", world);
 				LegendaryMjolnirBlockBlockAddedProcedure.executeProcedure($_dependencies);
 			}
-		}
-
-		@OnlyIn(Dist.CLIENT)
-		@Override
-		public void animateTick(BlockState state, World world, BlockPos pos, Random random) {
-			super.animateTick(state, world, pos, random);
-			PlayerEntity entity = Minecraft.getInstance().player;
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			if (true)
-				for (int l = 0; l < 4; ++l) {
-					double d0 = (x + 0.5) + (random.nextFloat() - 0.5) * 0.5D;
-					double d1 = ((y + 0.7) + (random.nextFloat() - 0.5) * 0.5D * 100) + 0.5;
-					double d2 = (z + 0.5) + (random.nextFloat() - 0.5) * 0.5D;
-					world.addParticle(ParticleTypes.END_ROD, d0, d1, d2, 0, 0, 0);
-				}
 		}
 
 		@Override

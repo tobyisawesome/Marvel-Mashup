@@ -71,7 +71,7 @@ public class ThorEntity extends MarvelMashupModElements.ModElement {
 			BipedRenderer customRender = new BipedRenderer(renderManager, new BipedModel(0), 0.5f) {
 				@Override
 				public ResourceLocation getEntityTexture(Entity entity) {
-					return new ResourceLocation("marvel_mashup:textures/thor_42172.png");
+					return new ResourceLocation("marvel_mashup:textures/f7a4b2c6b8f3ddaf.png");
 				}
 			};
 			customRender.addLayer(new BipedArmorLayer(customRender, new BipedModel(0.5f), new BipedModel(1)));
