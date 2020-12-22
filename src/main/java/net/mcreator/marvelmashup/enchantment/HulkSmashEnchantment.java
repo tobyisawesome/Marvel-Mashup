@@ -1,12 +1,18 @@
 
 package net.mcreator.marvelmashup.enchantment;
 
+import net.minecraftforge.registries.ObjectHolder;
+
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.enchantment.EnchantmentType;
+import net.minecraft.enchantment.Enchantment;
+
+import net.mcreator.marvelmashup.MarvelMashupModElements;
+
 @MarvelMashupModElements.ModElement.Tag
 public class HulkSmashEnchantment extends MarvelMashupModElements.ModElement {
-
 	@ObjectHolder("marvel_mashup:hulk_smash")
 	public static final Enchantment enchantment = null;
-
 	public HulkSmashEnchantment(MarvelMashupModElements instance) {
 		super(instance, 28);
 	}
@@ -15,9 +21,7 @@ public class HulkSmashEnchantment extends MarvelMashupModElements.ModElement {
 	public void initElements() {
 		elements.enchantments.add(() -> new CustomEnchantment(EquipmentSlotType.MAINHAND).setRegistryName("hulk_smash"));
 	}
-
 	public static class CustomEnchantment extends Enchantment {
-
 		public CustomEnchantment(EquipmentSlotType... slots) {
 			super(Enchantment.Rarity.RARE, EnchantmentType.DIGGER, slots);
 		}
@@ -46,7 +50,5 @@ public class HulkSmashEnchantment extends MarvelMashupModElements.ModElement {
 		public boolean isAllowedOnBooks() {
 			return true;
 		}
-
 	}
-
 }

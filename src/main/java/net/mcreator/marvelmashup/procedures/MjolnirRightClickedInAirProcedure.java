@@ -19,11 +19,13 @@ public class MjolnirRightClickedInAirProcedure extends MarvelMashupModElements.M
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure MjolnirRightClickedInAir!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure MjolnirRightClickedInAir!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
-			System.err.println("Failed to load dependency world for procedure MjolnirRightClickedInAir!");
+			if (!dependencies.containsKey("world"))
+				System.err.println("Failed to load dependency world for procedure MjolnirRightClickedInAir!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

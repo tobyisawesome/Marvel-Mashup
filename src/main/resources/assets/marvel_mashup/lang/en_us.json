@@ -5,6 +5,7 @@
   "item.marvel_mashup.iron_man": "Iron Man Spawn Egg",
   "block.marvel_mashup.adamantite_ore": "Adamantium Ore",
   "item.marvel_mashup.gravitron.desc": "Neil Cicierega - Gravitron",
+  "item.marvel_mashup.wip_spawn_egg": "Ender Dog Spawn Egg",
   "item.marvel_mashup.thor": "Thor Spawn Egg",
   "item.marvel_mashup.united_shield": "Adamantium Shield",
   "entity.marvel_mashup.thor": "Thor",
@@ -13,6 +14,12 @@
   "item.marvel_mashup.adamantite_gem": "Adamantium",
   "item.marvel_mashup.mjolnir": "Mjolnir",
   "entity.marvel_mashup.iron_man": "Iron Man",
+  "item.marvel_mashup.iron_man_spawn_egg": "Iron Man Spawn Egg",
   "block.marvel_mashup.legendary_mjolnir_block": "Legendary Mjolnir",
-  "block.marvel_mashup.discarded_shield": "Discarded Shield"
+  "entity.marvel_mashup.hulk": "Hulk",
+  "enchantment.marvel_mashup.hulk_smash": "Hulk Smash",
+  "enchantment.marvel_mashup.time_shift": "Time Shift",
+  "block.marvel_mashup.discarded_shield": "Discarded Shield",
+  "item.marvel_mashup.thor_spawn_egg": "Thor Spawn Egg",
+  "item.marvel_mashup.hulk_spawn_egg": "Hulk Spawn Egg"
 }

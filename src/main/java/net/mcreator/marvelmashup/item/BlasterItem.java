@@ -80,14 +80,14 @@ public class BlasterItem extends MarvelMashupModElements.ModElement {
 		}
 
 		@Override
-		public UseAction getUseAction(ItemStack stack) {
-			return UseAction.BOW;
-		}
-
-		@Override
 		public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity entity, Hand hand) {
 			entity.setActiveHand(hand);
 			return new ActionResult(ActionResultType.SUCCESS, entity.getHeldItem(hand));
+		}
+
+		@Override
+		public UseAction getUseAction(ItemStack itemstack) {
+			return UseAction.BOW;
 		}
 
 		@Override
@@ -103,7 +103,7 @@ public class BlasterItem extends MarvelMashupModElements.ModElement {
 				double y = entity.getPosY();
 				double z = entity.getPosZ();
 				if (true) {
-					ArrowCustomEntity entityarrow = shoot(world, entity, random, 1f, 7, 10);
+					ArrowCustomEntity entityarrow = shoot(world, entity, random, 1f, 7, 5);
 					itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
 					entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.DISALLOWED;
 				}
@@ -264,7 +264,7 @@ public class BlasterItem extends MarvelMashupModElements.ModElement {
 		entityarrow.shoot(d1, d0 - entityarrow.getPosY() + (double) MathHelper.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 1f * 2, 12.0F);
 		entityarrow.setSilent(true);
 		entityarrow.setDamage(7);
-		entityarrow.setKnockbackStrength(10);
+		entityarrow.setKnockbackStrength(5);
 		entityarrow.setIsCritical(false);
 		entity.world.addEntity(entityarrow);
 		double x = entity.getPosX();

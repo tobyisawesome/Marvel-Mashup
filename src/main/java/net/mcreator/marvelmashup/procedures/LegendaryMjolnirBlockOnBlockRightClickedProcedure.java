@@ -23,23 +23,28 @@ public class LegendaryMjolnirBlockOnBlockRightClickedProcedure extends MarvelMas
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure LegendaryMjolnirBlockOnBlockRightClicked!");
+			if (!dependencies.containsKey("entity"))
+				System.err.println("Failed to load dependency entity for procedure LegendaryMjolnirBlockOnBlockRightClicked!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
-			System.err.println("Failed to load dependency x for procedure LegendaryMjolnirBlockOnBlockRightClicked!");
+			if (!dependencies.containsKey("x"))
+				System.err.println("Failed to load dependency x for procedure LegendaryMjolnirBlockOnBlockRightClicked!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
-			System.err.println("Failed to load dependency y for procedure LegendaryMjolnirBlockOnBlockRightClicked!");
+			if (!dependencies.containsKey("y"))
+				System.err.println("Failed to load dependency y for procedure LegendaryMjolnirBlockOnBlockRightClicked!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
-			System.err.println("Failed to load dependency z for procedure LegendaryMjolnirBlockOnBlockRightClicked!");
+			if (!dependencies.containsKey("z"))
+				System.err.println("Failed to load dependency z for procedure LegendaryMjolnirBlockOnBlockRightClicked!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
-			System.err.println("Failed to load dependency world for procedure LegendaryMjolnirBlockOnBlockRightClicked!");
+			if (!dependencies.containsKey("world"))
+				System.err.println("Failed to load dependency world for procedure LegendaryMjolnirBlockOnBlockRightClicked!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

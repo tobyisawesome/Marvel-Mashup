@@ -61,7 +61,8 @@ public class ThorEntity extends MarvelMashupModElements.ModElement {
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire().size(0.6f, 1.8f)).build("thor")
 						.setRegistryName("thor");
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -16764109, -10027009, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("thor"));
+		elements.items.add(
+				() -> new SpawnEggItem(entity, -16764109, -10027009, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("thor_spawn_egg"));
 	}
 
 	@SubscribeEvent
