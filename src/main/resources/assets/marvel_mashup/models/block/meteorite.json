@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "marvel_mashup:blocks/meteorite",
+    "up": "marvel_mashup:blocks/meteorite",
+    "north": "marvel_mashup:blocks/meteorite",
+    "east": "marvel_mashup:blocks/meteorite",
+    "south": "marvel_mashup:blocks/meteorite",
+    "west": "marvel_mashup:blocks/meteorite",
+    "particle": "marvel_mashup:blocks/meteorite"
+  }
+}

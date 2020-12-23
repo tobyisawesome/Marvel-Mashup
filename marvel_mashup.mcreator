@@ -81,6 +81,18 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -556,13 +568,248 @@
       "registry_name": "hulk"
     },
     {
-      "name": "Quinjet",
-      "type": "structure",
-      "sortid": 33,
+      "name": "MjolnirLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "quinjet"
+      "registry_name": "mjolnir_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MjolnirRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mjolnir_right_clicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MeteoriteEntityWalksOnTheBlock",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "meteorite_entity_walks_on_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Meteorite",
+      "type": "block",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "meteorite"
+    },
+    {
+      "name": "Meteor",
+      "type": "mob",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "meteor"
+    },
+    {
+      "name": "MeteorEntityFalls",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "meteor_entity_falls",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CooledMeteorite",
+      "type": "block",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cooled_meteorite"
+    },
+    {
+      "name": "MeteoriteUpdateTick",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "meteorite_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MeteoriteBlockAdded",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "meteorite_block_added",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MeteorSpawn",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "meteor_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SpawnMeteorCommandExecuted",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawn_meteor_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SpawnMeteor",
+      "type": "command",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawn_meteor"
     }
   ],
   "variable_elements": [
@@ -587,8 +834,17 @@
       "item.marvel_mashup.wip": "Ender Dog Spawn Egg",
       "block.marvel_mashup.adamantite_ore_block": "Block of Adamantium",
       "entity.marvel_mashup.wip": "Ender Dog",
-      "item.marvel_mashup.iron_man": "Iron Man Spawn Egg",
       "block.marvel_mashup.adamantite_ore": "Adamantium Ore",
+      "entity.marvel_mashup.meteor": "Meteor",
+      "item.marvel_mashup.mjolnir": "Mjolnir",
+      "item.marvel_mashup.iron_man_spawn_egg": "Iron Man Spawn Egg",
+      "entity.marvel_mashup.hulk": "Hulk",
+      "block.marvel_mashup.meteorite": "Meteorite",
+      "enchantment.marvel_mashup.time_shift": "Time Shift",
+      "block.marvel_mashup.cooled_meteorite": "Meteorite",
+      "item.marvel_mashup.hulk_spawn_egg": "Hulk Spawn Egg",
+      "item.marvel_mashup.iron_man": "Iron Man Spawn Egg",
+      "item.marvel_mashup.meteor_spawn_egg": "Meteor Spawn Egg",
       "item.marvel_mashup.gravitron.desc": "Neil Cicierega - Gravitron",
       "item.marvel_mashup.wip_spawn_egg": "Ender Dog Spawn Egg",
       "item.marvel_mashup.thor": "Thor Spawn Egg",
@@ -597,16 +853,11 @@
       "item.marvel_mashup.gravitron": "Music Disc",
       "item.marvel_mashup.blaster": "Blaster",
       "item.marvel_mashup.adamantite_gem": "Adamantium",
-      "item.marvel_mashup.mjolnir": "Mjolnir",
       "entity.marvel_mashup.iron_man": "Iron Man",
-      "item.marvel_mashup.iron_man_spawn_egg": "Iron Man Spawn Egg",
       "block.marvel_mashup.legendary_mjolnir_block": "Legendary Mjolnir",
-      "entity.marvel_mashup.hulk": "Hulk",
       "enchantment.marvel_mashup.hulk_smash": "Hulk Smash",
-      "enchantment.marvel_mashup.time_shift": "Time Shift",
       "block.marvel_mashup.discarded_shield": "Discarded Shield",
-      "item.marvel_mashup.thor_spawn_egg": "Thor Spawn Egg",
-      "item.marvel_mashup.hulk_spawn_egg": "Hulk Spawn Egg"
+      "item.marvel_mashup.thor_spawn_egg": "Thor Spawn Egg"
     }
   },
   "workspaceSettings": {

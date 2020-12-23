@@ -22,7 +22,9 @@ import net.minecraft.entity.Entity;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.marvelmashup.procedures.MjolnirToolInHandTickProcedure;
+import net.mcreator.marvelmashup.procedures.MjolnirRightClickedOnBlockProcedure;
 import net.mcreator.marvelmashup.procedures.MjolnirRightClickedInAirProcedure;
+import net.mcreator.marvelmashup.procedures.MjolnirLivingEntityIsHitWithToolProcedure;
 import net.mcreator.marvelmashup.MarvelMashupModElements;
 
 import java.util.Map;
@@ -51,6 +53,9 @@ public class MjolnirItem extends MarvelMashupModElements.ModElement {
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("entity", entity);
+					$_dependencies.put("x", x);
+					$_dependencies.put("y", y);
+					$_dependencies.put("z", z);
 					$_dependencies.put("world", world);
 					MjolnirRightClickedInAirProcedure.executeProcedure($_dependencies);
 				}
@@ -72,7 +77,25 @@ public class MjolnirItem extends MarvelMashupModElements.ModElement {
 					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("entity", entity);
 					$_dependencies.put("world", world);
-					MjolnirRightClickedInAirProcedure.executeProcedure($_dependencies);
+					MjolnirRightClickedOnBlockProcedure.executeProcedure($_dependencies);
+				}
+				return retval;
+			}
+
+			@Override
+			public boolean hitEntity(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
+				boolean retval = super.hitEntity(itemstack, entity, sourceentity);
+				double x = entity.getPosX();
+				double y = entity.getPosY();
+				double z = entity.getPosZ();
+				World world = entity.world;
+				{
+					Map<String, Object> $_dependencies = new HashMap<>();
+					$_dependencies.put("x", x);
+					$_dependencies.put("y", y);
+					$_dependencies.put("z", z);
+					$_dependencies.put("world", world);
+					MjolnirLivingEntityIsHitWithToolProcedure.executeProcedure($_dependencies);
 				}
 				return retval;
 			}
