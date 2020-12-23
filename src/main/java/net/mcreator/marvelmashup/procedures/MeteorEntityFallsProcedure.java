@@ -3,7 +3,9 @@ package net.mcreator.marvelmashup.procedures;
 import net.minecraftforge.fml.server.ServerLifecycleHooks;
 
 import net.minecraft.world.server.ServerWorld;
+import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
+import net.minecraft.world.Explosion;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.Vec2f;
@@ -53,6 +55,9 @@ public class MeteorEntityFallsProcedure extends MarvelMashupModElements.ModEleme
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
+		if (world instanceof World && !world.getWorld().isRemote) {
+			world.getWorld().createExplosion(null, (int) x, (int) (y - 16), (int) z, (float) 64, Explosion.Mode.BREAK);
+		}
 		if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 			world.getWorld().getServer().getCommandManager().handleCommand(
 					new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "", new StringTextComponent(""),

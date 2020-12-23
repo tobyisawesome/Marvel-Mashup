@@ -41,7 +41,7 @@ public class SpawnMeteorCommandExecutedProcedure extends MarvelMashupModElements
 		IWorld world = (IWorld) dependencies.get("world");
 		if (world instanceof World && !world.getWorld().isRemote) {
 			Entity entityToSpawn = new MeteorEntity.CustomEntity(MeteorEntity.entity, world.getWorld());
-			entityToSpawn.setLocationAndAngles(((x + (Math.random() * 100)) - (Math.random() * 100)), 150,
+			entityToSpawn.setLocationAndAngles(((x + (Math.random() * 100)) - (Math.random() * 100)), 250,
 					((z + (Math.random() * 100)) - (Math.random() * 100)), world.getRandom().nextFloat() * 360F, 0);
 			if (entityToSpawn instanceof MobEntity)
 				((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),

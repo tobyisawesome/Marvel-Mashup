@@ -810,6 +810,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "spawn_meteor"
+    },
+    {
+      "name": "ADAMANTITERECIPE",
+      "type": "recipe",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "adamantiterecipe"
     }
   ],
   "variable_elements": [
@@ -836,8 +845,8 @@
       "entity.marvel_mashup.wip": "Ender Dog",
       "block.marvel_mashup.adamantite_ore": "Adamantium Ore",
       "entity.marvel_mashup.meteor": "Meteor",
-      "item.marvel_mashup.mjolnir": "Mjolnir",
       "item.marvel_mashup.iron_man_spawn_egg": "Iron Man Spawn Egg",
+      "item.marvel_mashup.mjolnir": "Mjolnir",
       "entity.marvel_mashup.hulk": "Hulk",
       "block.marvel_mashup.meteorite": "Meteorite",
       "enchantment.marvel_mashup.time_shift": "Time Shift",

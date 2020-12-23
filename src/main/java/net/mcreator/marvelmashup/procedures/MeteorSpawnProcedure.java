@@ -45,10 +45,10 @@ public class MeteorSpawnProcedure extends MarvelMashupModElements.ModElement {
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if ((Math.round((Math.random() * 200)) == 200)) {
+		if ((Math.round((Math.random() * 2000)) == 2000)) {
 			if (world instanceof World && !world.getWorld().isRemote) {
 				Entity entityToSpawn = new MeteorEntity.CustomEntity(MeteorEntity.entity, world.getWorld());
-				entityToSpawn.setLocationAndAngles(((x + (Math.random() * 100)) - (Math.random() * 100)), 150,
+				entityToSpawn.setLocationAndAngles(((x + (Math.random() * 100)) - (Math.random() * 100)), 250,
 						((z + (Math.random() * 100)) - (Math.random() * 100)), world.getRandom().nextFloat() * 360F, 0);
 				if (entityToSpawn instanceof MobEntity)
 					((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
