@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "marvel_mashup:blocks/meteorite",
-    "up": "marvel_mashup:blocks/meteorite",
-    "north": "marvel_mashup:blocks/meteorite",
-    "east": "marvel_mashup:blocks/meteorite",
-    "south": "marvel_mashup:blocks/meteorite",
-    "west": "marvel_mashup:blocks/meteorite",
-    "particle": "marvel_mashup:blocks/meteorite"
+    "down": "marvel_mashup:blocks/meteorite.png",
+    "up": "marvel_mashup:blocks/meteorite.png",
+    "north": "marvel_mashup:blocks/meteorite.png",
+    "east": "marvel_mashup:blocks/meteorite.png",
+    "south": "marvel_mashup:blocks/meteorite.png",
+    "west": "marvel_mashup:blocks/meteorite.png",
+    "particle": "marvel_mashup:blocks/meteorite.png"
   }
 }
